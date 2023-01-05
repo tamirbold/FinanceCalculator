@@ -129,10 +129,8 @@ var uiController = (function () {
         type = "exp";
       }
 
-      document.querySelector(DOMstrings.budgetLabel).textContent = formatAmount(
-        budget.budget,
-        type
-      );
+      document.querySelector(DOMstrings.budgetLabel).textContent =
+        formatAmount(budget.budget, type) + " $";
       document.querySelector(DOMstrings.incomeLabel).textContent = formatAmount(
         budget.totalInc,
         "inc"
